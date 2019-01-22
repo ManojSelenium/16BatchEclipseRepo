@@ -1,5 +1,6 @@
 package com.maven.testcases;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -13,6 +14,7 @@ public class FirstTest {
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("http://www.google.co.in");
+		driver.findElement(By.name("q")).sendKeys("selenium");
 		driver.quit();
 	}
 }
