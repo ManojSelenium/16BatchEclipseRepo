@@ -15,6 +15,7 @@ public class FirstTest {
 		
 		driver.get("http://www.google.co.in");
 		driver.findElement(By.name("q")).sendKeys("selenium");
+		System.out.println("New Branch code");
 		driver.quit();
 	}
 }
